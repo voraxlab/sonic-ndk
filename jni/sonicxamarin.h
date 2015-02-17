@@ -1,3 +1,4 @@
+#include <stdbool.h>
 /*
  * Class:     org_vinuxproject_sonic_Sonic
  * Method:    _init
@@ -101,7 +102,7 @@ void setChordPitchNative(long, bool);
  * Method:    _getChordPitch
  * Signature: (J)Z
  */
-getChordPitchNative(long);
+bool getChordPitchNative(long);
 
 /*
  * Class:     org_vinuxproject_sonic_Sonic
@@ -115,7 +116,7 @@ bool putBytesNative(long, char *, int);
  * Method:    _receiveBytes
  * Signature: (J[BI)I
  */
-int receiveBytesNative(long, char *, int);
+int receiveBytesNative(JNIEnv *env, long, char *, int);
 
 /*
  * Class:     org_vinuxproject_sonic_Sonic
